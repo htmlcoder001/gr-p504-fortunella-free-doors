@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>¡Gracias! Su pedido ha sido aceptado.</title>
+    <title>Σας ευχαριστώ!  Η παραγγελία σας έγινε αποδεκτή!</title>
     <link rel="stylesheet" href="ths.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
@@ -16,43 +16,43 @@
       <div class="header">
         <div class="title">
           <span class="main-title">
-		  ¡Gracias!
+		  Σας ευχαριστώ!
 		  </span><br />
-          Su pedido ha <br>sido aceptado.
+          Η παραγγελία σας <br>έγινε αποδεκτή!
         </div>
         <span>
-		Pronto el operador se pondrá en contacto con usted para confirmar la orden.
+		Σύντομα ο τηλεφωνητής μας θα επικοινωνήσει μαζί σας για να επιβεβαιώσει την παραγγελία.
         </span>
       </div>
 
       <div class="form">
-        <p>Por favor, compruebe la exactitud de los datos introducidos.</p>
+        <p>Ελέγξτε αν τα στοιχεία σας είναι σωστά.</p>
         <div class="form-wrap">
           <div class="wrap-input">
             <div class="input">
-              <label for="name">Nombre</label>
+              <label for="name">Ονομα</label>
               <div><?php echo ($data["name"])?></div>
             </div>
             <div class="input">
-              <label for="name">Teléfono</label>
+              <label for="name">Τηλέφωνο</label>
               <div><?php echo ($data["phone"])?></div>
             </div>
           </div>
           <button type="button" onclick="{showForm()}" id="hideButton">
-            Editar datos
+            Αλλαγή στοιχείων
           </button>
 
           <form
             class="hidden-form" id="form" method="post"
-             geo="es" action="api.php" 
-	onsubmit="return validate_form(this, 'Por favor ingrese un número de teléfono válido');"
+             geo="gr" action="api.php" 
+	onsubmit="return validate_form(this, 'Πληκτρολογηστε τον σωστο αριθμο τηλεφωνου');"
 			>
 			
-            <input type="text" name="name" required="" placeholder="Nombre" />
+            <input type="text" name="name" required="" placeholder="Ονομα" />
 
-            <input type="tel" name="phone" required="" placeholder="Teléfono" />
+            <input type="tel" name="phone" required="" placeholder="Τηλέφωνο" />
 
-            <button type="submit">Editar datos</button>
+            <button type="submit">Αλλαγή στοιχείων</button>
 
             <input name="subid" type="hidden" value="{subid}" />
             <input name="px" type="hidden" value="{px}" />

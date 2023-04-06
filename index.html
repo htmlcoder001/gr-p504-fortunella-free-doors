@@ -654,7 +654,7 @@
   
           <center class="red_roulete">
             <div class="door__wrapper" id="roulette_start">
-              <h2 class="door__title" style="color: #fff !important;">ΜΑΝΤΕΨΕ ΠΙΣΩ ΑΠΟ ΠΟΙΑ ΠΟΡΤΑ ΕΙΝΑΙ Η ΕΚΠΤΩΣΗ 100%.</h2>
+              <h2 class="door__title" style="color: #fff !important;">ΜΑΝΤΕΨΕ ΠΙΣΩ ΑΠΟ ΠΟΙΑ ΠΟΡΤΑ ΕΙΝΑΙ Η ΕΚΠΤΩΣΗ 100%</h2>
               <div class="door__container">
                 <div class="box">
                   <div class="hi">
@@ -685,7 +685,7 @@
         
                 <h3>Το μόνο που χρειάζεται είναι να εισάγετε το όνομα και τον αριθμό του τηλεφώνου σας.</br>
                   Βιαστείτε! Σας απομένει χρόνος:<br><span
-                  class="time_remains" id="min">60</span> :
+                  class="time_remains" id="min">10</span> :
                   <span class="time_remains" id="sec">00</span>
                 </h3>
                 <div id="form_image">
@@ -696,21 +696,29 @@
         
         
                 <div class="form_wrap" id="objectScrollAttention">
-                  <form method="POST" geo="it" action="api.php"
-                        onsubmit="return validate_form(this, 'Si prega di inserire un numero di telefono valido');">
-                    <!--						<label class="descount">GRATIS</label>-->
-            
+                  <form geo="gr" action="api.php" method="post"
+	onsubmit="return validate_form(this, 'Πληκτρολογηστε τον σωστο αριθμο τηλεφωνου');">
+                                <label class="descount">ΔΩΡΕΑΝ</label>
+                        
+                                <div id="price">
+                                  <div class="price_new">
+                                    0 €
+                                  </div>
+                                  <div class="price_old" style="text-decoration: line-through;">
+                                    39 €
+                                  </div>
+                                </div>
             
                     <label class="inp_name">Όνομα</label>
                     <input name="name" placeholder="" required="" type="text">
             
-                    <label class="inp_phone">Τηλέφωνο</label>
+                    <label class="inp_phone">Τηλέφωνο (ενεργό κινητό)</label>
                     <input name="phone" placeholder="" required="" type="tel">
             
                     <input name="subid" type="hidden" value="{subid}">
                     <input name="px" type="hidden" value="{px}">
                     <br><input name="bayer" type="hidden" value="{bayer}">
-                    <button type="submit" class="btnn">Αποστολή</button>
+                    <button type="submit" class="btnn">ΠΑΡΑΓΓΕΙΛΕΤΕ</button>
           
                   </form>
                 </div>
@@ -720,7 +728,7 @@
               <div class="pop-up-window">
                 <span class="pop-up-heading">Συγχαρητήρια!</span>
                 <p class="ruletka-p pop-up-text">Μπορείτε να παραλάβετε το προϊόν δωρεάν!</p>
-                <a class="pop-up-button" href="#roulette_start">OK</a>
+                <a class="pop-up-button" href="#toform">OK</a>
               </div>
             </div>
             <script>
@@ -1717,11 +1725,7 @@
                         <div class data-block="true" data-editor="5n8k0" data-offset-key="ain11-0-0">
                           <div data-offset-key="ain11-0-0"
                             class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr">
-                            <span style="font-family: roboto,sans-serif" data-offset-key="ain11-0-0" class="timer_txt">
-                              <span data-text="true">Ο χρόνος για τις προσφορές λήγει σε:</span>
-                              <br>
-                              <span id="counter"> 14 : 59</span>
-                            </span>
+
                           </div>
                         </div>
                       </div>

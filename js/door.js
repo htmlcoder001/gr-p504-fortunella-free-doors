@@ -28,23 +28,23 @@ function openDoor(o) {
       door1.classList.contains("open")
         ? ((doorSale1.innerHTML = "100%"),
           (doorSale1.style.left = "12px"),
-          (doorSale2.innerHTML = "25%"),
+          (doorSale2.innerHTML = "50%"),
           (doorSale2.style.left = "30px"),
-          (doorSale3.innerHTML = "50%"),
+          (doorSale3.innerHTML = "75%"),
           (doorSale3.style.left = "32px"))
         : door2.classList.contains("open")
         ? ((doorSale2.innerHTML = "100%"),
           (doorSale2.style.left = "12px"),
-          (doorSale1.innerHTML = "50%"),
+          (doorSale1.innerHTML = "75%"),
           (doorSale1.style.left = "32px"),
-          (doorSale3.innerHTML = "25%"),
+          (doorSale3.innerHTML = "50%"),
           (doorSale3.style.left = "30px"))
         : door3.classList.contains("open") &&
-          ((doorSale1.innerHTML = "25%"),
+          ((doorSale1.innerHTML = "50%"),
           (doorSale1.style.left = "30px"),
           (doorSale3.innerHTML = "100%"),
           (doorSale3.style.left = "12px"),
-          (doorSale2.innerHTML = "50%"),
+          (doorSale2.innerHTML = "75%"),
           (doorSale2.style.left = "32px"));
     });
   for (let o = 0; o < doors.length; o++)
@@ -63,7 +63,7 @@ $(".close-popup, .pop-up-button").click(function (o) {
     (orderBlockForm.style.display = "block");
 });
 let intr,
-  time = 3600,
+  time = 600,
   count = 0;
 function start_timer() {
   if ((count++, 1 !== count)) return !1;
